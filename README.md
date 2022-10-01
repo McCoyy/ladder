@@ -81,6 +81,8 @@ pip 安装 python 版本的 shadowsocks
 
 ``pip install shadowsocks``
 
+需要改为pip install https://github.com/shadowsocks/shadowsocks/archive/master.zip -U
+
 安装完成后，需要创建shadowsocks的配置文件/etc/shadowsocks.json，编辑内容如下：
 
 ``vim /etc/shadowsocks.json``
@@ -101,6 +103,14 @@ pip 安装 python 版本的 shadowsocks
   "method": "rc4-md5"
 }
 ```
+
+{
+  "server": "0.0.0.0",
+  "server_port": 8888,
+  "port": 1234,
+  "password": "qwwwerr",
+  "method": "aes-256-gcm"
+}
 
 ## 5. 配置自启动
 
